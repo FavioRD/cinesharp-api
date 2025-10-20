@@ -21,7 +21,8 @@ namespace ApiCineSharp.API.Servicios.Servicios
                 Clasificacion = p.Clasificacion,
                 DuracionMinutos = p.DuracionMin,
                 Imagen = p.PosterUrl,
-                Titulo = p.Titulo
+                Titulo = p.Titulo,
+                Idioma = p.Idioma
             }).ToList();
         }
 
@@ -44,6 +45,7 @@ namespace ApiCineSharp.API.Servicios.Servicios
                 Clasificacion = pelicula.Clasificacion,
                 Imagen = pelicula.PosterUrl,
                 DuracionMinutos = pelicula.DuracionMin,
+                Idioma = pelicula.Idioma,
                 Funciones = pelicula.Funciones.Select(f => new PeliculaFuncion()
                 {
                     Fecha = f.Fecha,
