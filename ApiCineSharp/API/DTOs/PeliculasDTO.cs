@@ -7,6 +7,7 @@
         public string Imagen { get; set; }
         public string Clasificacion { get; set; }
         public int DuracionMinutos { get; set; }
+        public string Idioma { get; set; }
     }
 
     public class DetallePeliculaDTO : PeliculaDTO
