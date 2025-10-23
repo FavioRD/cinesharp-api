@@ -16,6 +16,8 @@ namespace ApiCineSharp.API.Data
         public DbSet<Funcion> Funciones { get; set; }
         public DbSet<Entrada> Entradas { get; set; }
         public DbSet<Pago> Pagos { get; set; }
+        public DbSet<Rol> Roles { get; set; }
+        public DbSet<UsuarioRol> UsuarioRoles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
